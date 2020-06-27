@@ -8,8 +8,8 @@ It's a collection of OpenSource audio plugins, which are (at inception) based on
 All plugin subfolders are organized as follows:
 
 - /PD/ ... the orginal Pure Data patch and support files.
-- /Camomile/ ... the Camomile plugin files. Place /AUCOP-guitarToy16x/ in the Camomile/Examples folder, and invoke Camomile as required for the target OS.
-- /plugins_linux/ ... binary plugins built for EXT4 64 bit systems (Debian Buster). Copy /AUCOP-guitarToy16x.lv2 to ./.lv2, or the LV2 system folder.
+- /Camomile/ ... the Camomile plugin files. Place /<plugin_name>/ in the Camomile/Examples folder, and invoke Camomile as required for the target OS.
+- /plugins_linux/ ... binary plugins built for EXT4 64 bit systems (Debian Buster). Copy /<plugin_name>.lv2/ to ./.lv2, or the LV2 system folder.
 
 
 Links:
