@@ -1,0 +1,174 @@
+#N canvas 68 144 887 539 10;
+#X text 43 495 AUCOP Guitar Toy is an 16x oversampled distortion and
+filtering plugin for guitarists;
+#X obj 5 5 cnv 15 378 298 empty empty empty 20 12 0 14 -228856 -66577
+0;
+#X obj 15 48 hsl 128 15 0.1 35 0 0 \$0-gain_s \$0-gain_r Gain -2 -8
+0 10 -262130 -1 -1 11157 1;
+#X obj 511 441 *~ 1;
+#X obj 208 271 hsl 128 15 0 1 0 0 \$0-level_s \$0-level_r Level -2
+-8 0 10 -262144 -1 -1 8382 1;
+#X obj 552 95 adc~ 1;
+#X obj 510 465 dac~ 1;
+#X obj 15 85 hsl 128 15 1 0 0 0 \$0-peaks_s \$0-peaks_r Squash_peaks
+-2 -8 0 10 -262130 -1 -1 10541 1;
+#X obj 564 351 + 1;
+#X obj 564 376 * 2;
+#X obj 15 122 hsl 128 15 500 2000 0 0 \$0-lowpass_s \$0-lowpass_r LowPass_in
+-2 -8 0 10 -262144 -1 -1 3810 1;
+#X obj 208 86 hsl 128 15 10 350 0 0 \$0-sweep_s \$0-sweep_r LFO_Sweep_range
+-2 -8 0 10 -191407 -262144 -1 934 1;
+#X floatatom 344 85 5 0 0 0 - - -;
+#X floatatom 151 47 5 0 0 0 - - -;
+#X floatatom 151 85 5 0 0 0 - - -;
+#X floatatom 151 121 5 0 0 0 - - -;
+#X floatatom 344 270 5 0 0 0 - - -;
+#X obj 553 319 +~;
+#X obj 208 234 hsl 128 15 3 -10 0 0 \$0-amtMix_s \$0-amtMix_r Mix_Amount
+-2 -8 0 10 -262130 -1 -1 7034 1;
+#X floatatom 344 233 5 0 0 0 - - -;
+#X obj 52 199 hradio 15 1 0 6 \$0-scale_s \$0-scale_r Scale 0 -8 0
+10 -262144 -1 -1 4;
+#X obj 473 188 vcf~ 400, f 11;
+#X obj 295 24 tgl 15 0 empty \$0-LFOonOff_r LFO_on/off 17 7 0 10 -228856
+-1 -1 0 1;
+#X obj 460 95 *~ 50;
+#X obj 440 25 osc~ 0.3;
+#X obj 461 122 +~ 50;
+#X obj 208 123 hsl 128 15 50 1500 0 0 \$0-freqOffset_s \$0-freqOffset_r
+Freq_Center -2 -8 0 10 -262130 -1 -1 9670 1;
+#X floatatom 344 122 5 0 0 0 - - -;
+#X obj 208 49 hsl 128 15 0.01 5 0 0 \$0-LFOfreq_s \$0-LFOfreq_r LFO_freq
+-2 -8 0 10 -191407 -262144 -1 2520 1;
+#X floatatom 344 48 5 0 0 0 - - -;
+#X obj 208 160 hsl 128 15 0.1 12 0 0 \$0-freqQ_s \$0-freqQ_r Filter_Q
+-2 -8 0 10 -262130 -1 -1 3633 1;
+#X floatatom 344 159 5 0 0 0 - - -;
+#X obj 569 293 *~ -2;
+#X obj 570 263 *~ 0.3;
+#X obj 473 229 *~ 1;
+#X obj 208 197 hsl 128 15 1 0 0 0 \$0-fMix_s \$0-fMix_r BP....Filter_Mix....LP
+0 -8 0 10 -262130 -1 -1 4597 1;
+#X obj 603 216 - 1;
+#X obj 603 239 abs;
+#X floatatom 344 196 5 0 0 0 - - -;
+#N canvas 417 133 725 564 preWindow 0;
+#X obj 340 465 s \$0-scale_r;
+#X obj 324 489 s \$0-level_r;
+#X obj 356 441 s \$0-lowpass_r;
+#X obj 371 416 s \$0-LFOfreq_r;
+#X obj 387 391 s \$0-sweep_r;
+#X obj 403 367 s \$0-freqOffset_r;
+#X obj 419 342 s \$0-freqQ_r;
+#X obj 450 292 s \$0-LFOonOff_r;
+#X obj 466 267 s \$0-fMix_r;
+#X obj 54 203 text define \$0-preText;
+#X msg 54 177 read ./gtPresets.txt;
+#X obj 51 51 cnv 15 174 64 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X obj 53 53 cnv 15 170 60 empty empty empty 20 12 0 14 -191407 -66577
+0;
+#X obj 60 62 hradio 14 1 0 9 \$0-presRadio_s \$0-presRadio_r empty
+5 21 0 10 -262144 -1 -1 7;
+#X symbolatom 60 88 21 0 0 0 - #0-presName_r #0-presName_s;
+#X obj 200 59 vradio 13 1 0 3 \$0-presBank_s empty empty 0 -8 0 10
+-262144 -1 -1 2;
+#X text 194 97 Bank;
+#X obj 293 116 + 0;
+#X obj 308 74 * 9;
+#X obj 279 84 t b;
+#X obj 495 209 s \$0-presName_r;
+#X obj 54 150 loadbang;
+#X obj 342 74 r \$0-presRadio_s;
+#X obj 308 46 r \$0-presBank_s;
+#X msg 24 262 0;
+#X obj 24 287 s \$0-presRadio_r;
+#X obj 293 537 s \$0-gain_r;
+#X obj 308 513 s \$0-peaks_r;
+#X obj 434 317 s \$0-amtMix_r;
+#X obj 24 237 delay 200;
+#X obj 293 173 unpack f f f f f f f f f f f f f s;
+#X obj 479 238 s \$0-loOut_r;
+#X obj 293 143 text get \$0-preText 0 14;
+#X connect 10 0 9 0;
+#X connect 17 0 32 0;
+#X connect 18 0 17 1;
+#X connect 19 0 17 0;
+#X connect 21 0 10 0;
+#X connect 21 0 29 0;
+#X connect 22 0 17 0;
+#X connect 23 0 18 0;
+#X connect 23 0 19 0;
+#X connect 24 0 25 0;
+#X connect 29 0 24 0;
+#X connect 30 0 26 0;
+#X connect 30 1 27 0;
+#X connect 30 2 1 0;
+#X connect 30 3 0 0;
+#X connect 30 4 2 0;
+#X connect 30 5 3 0;
+#X connect 30 6 4 0;
+#X connect 30 7 5 0;
+#X connect 30 8 6 0;
+#X connect 30 9 28 0;
+#X connect 30 10 7 0;
+#X connect 30 11 8 0;
+#X connect 30 12 31 0;
+#X connect 30 13 20 0;
+#X connect 32 0 30 0;
+#X coords 0 -1 1 1 176 66 2 50 50;
+#X restore 10 233 pd preWindow;
+#X obj 15 160 hsl 128 15 1000 16000 0 0 \$0-loOut_s \$0-loOut_r Lowpass_out
+-2 -8 0 10 -262144 -1 -1 931 1;
+#X obj 603 379 samplerate~;
+#X obj 603 351 loadbang;
+#X obj 512 410 16x_distort;
+#X obj 440 64 *~ 1;
+#X floatatom 151 159 5 0 0 0 - - -;
+#X text 58 12 AUCOP GuitarToy \, Pd patch version;
+#X connect 2 0 13 0;
+#X connect 2 0 43 3;
+#X connect 3 0 6 0;
+#X connect 4 0 3 1;
+#X connect 4 0 16 0;
+#X connect 5 0 21 0;
+#X connect 5 0 17 0;
+#X connect 7 0 14 0;
+#X connect 7 0 43 4;
+#X connect 8 0 9 0;
+#X connect 9 0 43 5;
+#X connect 10 0 15 0;
+#X connect 10 0 43 1;
+#X connect 11 0 12 0;
+#X connect 12 0 23 1;
+#X connect 17 0 43 0;
+#X connect 18 0 19 0;
+#X connect 19 0 32 1;
+#X connect 20 0 8 0;
+#X connect 21 0 34 0;
+#X connect 21 1 33 0;
+#X connect 22 0 44 1;
+#X connect 23 0 25 0;
+#X connect 24 0 44 0;
+#X connect 25 0 21 1;
+#X connect 26 0 27 0;
+#X connect 27 0 25 1;
+#X connect 28 0 29 0;
+#X connect 29 0 24 0;
+#X connect 30 0 31 0;
+#X connect 30 0 21 2;
+#X connect 32 0 17 1;
+#X connect 33 0 32 0;
+#X connect 34 0 32 0;
+#X connect 35 0 34 1;
+#X connect 35 0 36 0;
+#X connect 35 0 38 0;
+#X connect 36 0 37 0;
+#X connect 37 0 33 1;
+#X connect 40 0 43 2;
+#X connect 40 0 45 0;
+#X connect 41 0 43 6;
+#X connect 42 0 41 0;
+#X connect 43 0 3 0;
+#X connect 44 0 23 0;
+#X coords 0 -1 1 1 380 300 2 4 4;
