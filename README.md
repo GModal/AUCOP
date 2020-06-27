@@ -17,3 +17,6 @@ Links:
 - [Camomile](https://github.com/pierreguillot/Camomile)
 - [libpd](https://github.com/libpd)
 - [Pure Data](https://puredata.info/)
+
+Thanks! Later,
+Doug Garmon
