@@ -54,4 +54,4 @@ It's evolved into something not-quite-so-low-impact, but that's due to moving fr
 
 A custom distortion function uses the expr~ object, but mostly for a logic compare and not for crunching.
 
-The filtering is done before upsampling to conserve cpu cycles. It's also an unusual filter setup; it's somewhat counter-intuitive, but sounds pretty nice.
+The filtering is done before upsampling to conserve cpu cycles. It's also an unusual filter setup; it's somewhat counter-intuitive, but sounds pretty nice. It also includes an LFO sweep function. I included this to add some subtle "motion" to the sound, but it can give more overt effects (LFO wha, or phase shifting "like" sounds).
