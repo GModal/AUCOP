@@ -4,7 +4,7 @@ AUCOP-guitarToy16x is a 16x-oversampled guitar audio processor. It includes a cu
 
 See the AUCOP parent README for installation instructions.
 
-![gtoy pic](https://github.com/GModal/webstuff/guitarToy.png)
+![gtoy pic](../webstuff/guitarToy.png)
 
 ## Plugin use (copy of Info.txt)
 
