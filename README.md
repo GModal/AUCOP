@@ -16,7 +16,7 @@ All plugin subfolders are organized as follows:
   
 I prefer the user acct local installs, as that allows for easy editing of the preset files that accompany some plugins.
 
-### About Camomile and AUCOC
+### About Camomile and AUCOP
 
 Camomile affords encapulation of Pure Data patches within different plugin formats for multiple platforms (Linux, Mac, Windows). Currently only the Linux binary plugins are included (this will likely change), but using the source files to generate the plugins for other platforms is encouraged. See the instructions above in *Installation*.
 
@@ -24,6 +24,8 @@ Learn how to create new Camomile plugins [here](https://github.com/pierreguillot
 
 All Camomile plugins with guis have an extra documentation tab that's accessed by clicking on the chamomile flower in the upper left corner of the GUI. 
 <img src="https://user-images.githubusercontent.com/1409918/37906678-2b998b0a-3103-11e8-946a-10df0f3d2eca.png" width="25"> One tab displays the contents of the plugin-defined "description" file -- "Info.txt" in the plugin folder is the conventional name.
+
+As noted, each AUCOP project includes a Linux LV2 plugin, and a VST2 plugin. They are not stand-alone applications, and must be instantiated within an audio app, such as Carla or a DAW, like Ardour. There are some LV2 issues currently, like all parameters are normalized to a 0-1 range (probably a .ttl file issue).
 
 ---
 
