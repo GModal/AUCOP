@@ -3,7 +3,9 @@
 AUCOP is...
 #### *An Unfortunate Collection Of Plugins*
 
-It's a collection of OpenSource audio plugins, which are (at inception) based on Pure Data and the Camomile plugin API (which itself uses libpd). Most plugins are based on "Vanilla" Pd, which is a prerequisite of Camomile.
+It's a collection of OpenSource audio plugins, which are (at inception) based on Pure Data and the Camomile plugin API (which itself uses libpd). Most plugins are based on "Vanilla" Pd, which is a prerequisite of Camomile. 
+
+Some plugins also utilize MobMuPlat, which is an opensource API for creating interfaces on mobile devices. MobMuPlat has a great networking hooks, and is OSC capable.
 
 ### Installation
 All plugin subfolders are organized as follows:
@@ -27,8 +29,9 @@ All Camomile plugins with guis have an extra documentation tab that's accessed b
 ### Links:
 
 - [Camomile](https://github.com/pierreguillot/Camomile)
+- [MobMuPlat](http://www.danieliglesia.com/mobmuplat/)
 - [libpd](https://github.com/libpd)
 - [Pure Data](https://puredata.info/)
 
 Thanks! Later,   
-Doug Garmon
+*Doug Garmon*
