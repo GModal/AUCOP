@@ -7,7 +7,7 @@ See the AUCOP parent README for installation instructions.
 ![gtoy pic](../webstuff/guitarToy.png)
 
 ## Plugin use (copy of Info.txt)
-
+---
 AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled distortion and simple but powerful pre-filter.
 
 ### USE:
