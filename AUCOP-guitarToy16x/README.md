@@ -1,4 +1,4 @@
-# AUCOP-guitarToy16x
+## AUCOP-guitarToy16x
 
 AUCOP-guitarToy16x is a 16x-oversampled guitar audio processor. It includes a custom distortion module, an unusual filter module and a set of presets.
 
@@ -13,7 +13,7 @@ AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled dist
 ### USE:
 --Click on the Preset buttons to reset the parameters. These are loaded from a text file at start-up.
 
-### Parameters:
+#### Parameters:
 
 - Gain: Distortion gain.
 - Squash Peaks: Asymmetrically down-scale the peaks after the first level of distortion is appled. This does lower amplitude, so compensate with Level.
@@ -21,11 +21,11 @@ AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled dist
 - Low Pass Out: Low-pass filter applied before down-sampling.
 - Scale: Perform a destructive Pre and Post scaling of the signal, before the distortion and after.
 
-### Preset section
+#### Preset section
 - Preset: Click for preset in current Bank.
 - Bank: Click to select Bank.
 
-### Filter section
+#### Filter section
 - LFO Freq: The filter has an optional LFO to alter the center frequency. On/Off enables/disables the LFO.
 - LFO Sweep Range: The center frequency is shifted by this amount by the LFO.
 - Freq Center: Filter center frequency.
@@ -35,7 +35,7 @@ AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled dist
 - Level: Overall volume output level.
 
 
-### Notes:
+#### Notes:
 A post-distortion filter is appled before the signal is upsampled. It's currently set to a low frequency, to suppress higher harmonic alias issues.
 
 This corresponds (very) loosely to the frequency response of guitar speakers.
