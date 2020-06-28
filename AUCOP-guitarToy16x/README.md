@@ -38,8 +38,10 @@ AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled dist
 ### Notes:
 A post-distortion filter is appled before the signal is upsampled. It's currently set to a low frequency, to suppress higher harmonic alias issues.
 
-This corresponds loosely to the frequency response of guitar speakers.
+This corresponds (very) loosely to the frequency response of guitar speakers.
 
 #### AUCOP: An Unfortunate Collection Of Plugins
 
 Plugin build from a PureData vanilla patch, with Camomile.
+
+---
