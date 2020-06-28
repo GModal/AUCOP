@@ -19,7 +19,7 @@ Camomile affords encapulation of Pure Data patches within the plugin formats for
 Learn to create new Camomile plugins [here](https://github.com/pierreguillot/Camomile/wiki/How-to-create-new-plugins).
 
 All Camomile plugins with guis have an extra documentation tab that's accessed by clicking on the camomile flower in the upper left corner of the GUI:
-![flower](https://user-images.githubusercontent.com/1409918/37906678-2b998b0a-3103-11e8-946a-10df0f3d2eca.png | width=100)
+![flower](https://user-images.githubusercontent.com/1409918/37906678-2b998b0a-3103-11e8-946a-10df0f3d2eca.png | width=100px)
 
 Links:
 
