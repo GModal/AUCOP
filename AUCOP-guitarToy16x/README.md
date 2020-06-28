@@ -4,7 +4,9 @@ AUCOP-guitarToy16x is a 16x-oversampled guitar audio processor. It includes a cu
 
 See the AUCOP parent README for installation instructions.
 
-### Plugin use (copy of Info.txt)
+![gtoy pic](../webstuff/guitarToy.png)
+
+## Plugin use (copy of Info.txt)
 
 AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled distortion and simple but powerful pre-filter.
 
