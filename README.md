@@ -20,11 +20,10 @@ I prefer the user acct local installs, as that allows for easy editing of the pr
 
 Camomile affords encapulation of Pure Data patches within different plugin formats for multiple platforms (Linux, Mac, Windows). Currently only the Linux binary plugins are included (this will likely change), but using the source files to generate the plugins for other platforms is encouraged. See the instructions above in *Installation*.
 
-Learn to create new Camomile plugins [here](https://github.com/pierreguillot/Camomile/wiki/How-to-create-new-plugins).
+Learn how to create new Camomile plugins [here](https://github.com/pierreguillot/Camomile/wiki/How-to-create-new-plugins).
 
-All Camomile plugins with guis have an extra documentation tab that's accessed by clicking on the camomile flower in the upper left corner of the GUI. One tab displays the contents of the plugin-defined "description" file -- "Info.txt" in the plugin folder is the conventional name.
-
-<img src="https://user-images.githubusercontent.com/1409918/37906678-2b998b0a-3103-11e8-946a-10df0f3d2eca.png" width="40">
+All Camomile plugins with guis have an extra documentation tab that's accessed by clicking on the camomile flower in the upper left corner of the GUI. 
+<img src="https://user-images.githubusercontent.com/1409918/37906678-2b998b0a-3103-11e8-946a-10df0f3d2eca.png" width="15"> One tab displays the contents of the plugin-defined "description" file -- "Info.txt" in the plugin folder is the conventional name.
 
 ---
 
