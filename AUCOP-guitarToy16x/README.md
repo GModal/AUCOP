@@ -55,3 +55,22 @@ It's evolved into something not-quite-so-low-impact, but that's due to moving fr
 A custom distortion function uses the expr~ object, but mostly a conditional statement and not for number crunching.
 
 The filtering is done before upsampling to conserve cpu cycles. It's also an unusual filter setup; it's somewhat counter-intuitive, but sounds pretty nice. It also includes an LFO sweep function. I included this to add some subtle "motion" to the sound, but it can give more overt effects (LFO wha, or phase shifting "like" sounds).
+
+The presets are loaded from a text file inside the plugin (or Pd) folder. It's named "gtPresets.txt" and can be edited with any text editor. Here's the parameter order & values:
+
+#### Parameters Order, txt file:
+
+- Gain ... 0.1-35
+- Squash Peaks ... 0-1
+- Level ... 0-1
+- Scale, Pre/Post ... 0-5
+- Lowpass In ... 200-4400
+- LFO Frequency ... 0-5
+- LFO Sweep Range ... 0-350
+- Frequency Center ... 50-1500
+- Filter Q ... 0.1-12
+- Mix Amount ... -10-3
+- LFO On/Off ... 0-1 (integer)
+- Filter Mix ... 0-1
+- Lowpass Out ... 800-3800
+- Patch Name ... text, no spaces
