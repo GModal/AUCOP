@@ -1,7 +1,7 @@
 # AUCOP
 
 AUCOP is...
-#### *An Unfortunate Collection Of Plugins*
+### *An Unfortunate Collection Of Plugins*
 
 It's a collection of open source audio plugins, which are (at inception) based on Pure Data and the Camomile plugin API (which itself uses libpd). Most plugins are based on "Vanilla" Pd, which is a prerequisite of Camomile. 
 
@@ -25,7 +25,7 @@ Learn how to create new Camomile plugins [here](https://github.com/pierreguillot
 All Camomile plugins with guis have an extra documentation tab that's accessed by clicking on the chamomile flower in the upper left corner of the GUI. 
 <img src="https://user-images.githubusercontent.com/1409918/37906678-2b998b0a-3103-11e8-946a-10df0f3d2eca.png" width="25"> One tab displays the contents of the plugin-defined "description" file -- "Info.txt" in the plugin folder is the conventional name.
 
-As noted, each AUCOP project includes a Linux LV2 plugin, and a VST2 plugin. They are not stand-alone applications, and must be instantiated within an audio app, such as Carla or a DAW, like Ardour. There are some LV2 issues currently, like all parameters are normalized to a 0-1 range (probably a .ttl file issue).
+As noted, each AUCOP project includes a Linux LV2 plugin, and a VST2 plugin. They are not stand-alone applications, and must be instantiated within an audio app, such as Carla or a DAW, like Ardour. There are some LV2 issues currently, like all parameters are normalized to a 0-1 range (probably a .ttl file issue). It's not a contraint on other LV2 plugins, AFAIK.
 
 ---
 
