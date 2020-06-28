@@ -45,3 +45,13 @@ This corresponds (very) loosely to the frequency response of guitar speakers.
 Plugin build from a PureData vanilla patch, with Camomile.
 
 ---
+
+### Thoughts About AUCOP-guitarToy16x
+
+GuitarToy was conceived as a low-impact guitar "enhancer," a plugin that would offer a good basic guitar sound but not be overloaded with features. I always follow it with a reverb or delay effect. There are so many good and optimized reverbs, better to use an existing one.
+
+It's evolved into something not-quite-so-low-impact, but that's due to moving from 8x to 16x oversampling. IMO the 16x version sounded so much better, the extra processing overhead is worth the cost.
+
+A custom distortion function uses the expr~ object, but mostly for a logic compare and not for crunching.
+
+The filtering is done before upsampling to conserve cpu cycles. It's also an unusual filter setup; it's somewhat counter-intuitive, but sounds pretty nice.
