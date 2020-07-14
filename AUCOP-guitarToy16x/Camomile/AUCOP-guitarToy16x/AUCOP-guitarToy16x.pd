@@ -1,4 +1,4 @@
-#N canvas 288 96 1053 618 10;
+#N canvas 239 115 1053 618 10;
 #X obj 555 442 *~ 1;
 #X obj 442 171 adc~ 1;
 #X obj 555 467 dac~ 1;
@@ -14,11 +14,11 @@
 0;
 #X text 109 344 Send GUI input upstream;
 #X obj 24 104 hsl 128 15 1 0 0 0 \$0-peaks_s \$0-peaks_r empty -2 -12
-0 10 -262144 -1 -1 0 1;
+0 10 -262130 -1 -1 0 1;
 #X obj 23 68 hsl 128 15 0.01 35 0 0 \$0-gain_s \$0-gain_r empty -2
--8 0 10 -262144 -1 -1 2174 1;
+-8 0 10 -262130 -1 -1 2174 1;
 #X obj 219 277 hsl 128 15 0 1 0 0 \$0-level_s \$0-level_r empty -2
--12 0 10 -262144 -1 -1 9525 1;
+-12 0 10 -262144 -1 -1 7327 1;
 #X text 68 13 AUCOPlugins, f 13;
 #X text 218 259 Level, f 7;
 #X text 29 49 Gain, f 6;
@@ -43,18 +43,18 @@
 #X obj 609 128 param.get 10 \$0-freqQ_r;
 #X obj 630 153 param.get 11 \$0-fMix_r;
 #X obj 219 104 hsl 128 15 10 350 0 0 \$0-sweep_s \$0-sweep_r empty
--2 -8 0 10 -262144 -1 -1 934 1;
+-2 -8 0 10 -191407 -262144 -1 934 1;
 #X obj 219 140 hsl 128 15 50 1500 0 0 \$0-freqCenter_s \$0-freqCenter_r
-empty -2 -8 0 10 -262144 -1 -1 4773 1;
+empty -2 -8 0 10 -262130 -1 -1 4773 1;
 #X obj 219 69 hsl 128 15 0.01 5 0 0 \$0-LFOfreq_s \$0-LFOfreq_r empty
--2 -8 0 10 -262144 -1 -1 802 1;
+-2 -8 0 10 -191407 -262144 -1 802 1;
 #X text 228 50 LFO Freq, f 10;
 #X obj 219 244 hsl 128 15 3 -10 0 0 \$0-mixAmt_s \$0-mixAmt_r empty
--2 -8 0 10 -262144 -1 -1 4171 1;
+-2 -8 0 10 -262130 -1 -1 4171 1;
 #X obj 220 175 hsl 128 15 0.1 12 0 0 \$0-freqQ_s \$0-freqQ_r empty
--2 -8 0 10 -262144 -1 -1 1387 1;
+-2 -8 0 10 -262130 -1 -1 1387 1;
 #X obj 219 209 hsl 128 15 1 0 0 0 \$0-fMix_s \$0-fMix_r empty 36 -8
-0 10 -262144 -1 -1 3175 1;
+0 10 -262130 -1 -1 3175 1;
 #X text 229 157 Filter Q, f 11;
 #X text 224 226 Mix Amount, f 13;
 #X obj 332 48 tgl 15 0 \$0-LFOonOff_s \$0-LFOonOff_r empty 17 7 0 10
