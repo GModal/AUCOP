@@ -20,7 +20,7 @@ Additionally, due to JUCE cross-platform issues, MANY extra MIDI parameters are 
 
 - /.AUCOP/ ... This directory should be copied to the user home dir (i.e.: ~/.AUCOP/). It holds preset and configuration files. It's new with 0.1.71.
   
-I prefer the user "home" installs, as that allows for easy editing of the preset files that accompany some plugins.
+I prefer the user "home" installs, as that allows for easy editing of the preset files that accompany some plugins. And *Carla* automatically scans the ~/.lv2 directory on start, no need to manually rescan...
 
 ### About Camomile and AUCOP
 
