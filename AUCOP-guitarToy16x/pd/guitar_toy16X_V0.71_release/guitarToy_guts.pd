@@ -1,52 +1,52 @@
-#N canvas 384 147 977 569 10;
+#N canvas 321 117 934 559 10;
 #X obj 18 59 hsl 128 15 0.1 85 0 0 \$0-gain_s \$0-gain_r Gain 20 -8
-0 10 -262130 -1 -1 883 1;
+0 10 -262130 -1 -1 2827 1;
 #X obj 206 278 hsl 128 15 0 1 0 0 \$0-level_s \$0-level_r Level 20
--8 0 10 -228856 -1 -1 12065 1;
-#X obj 596 57 adc~ 1;
+-8 0 10 -228856 -1 -1 5080 1;
+#X obj 596 73 adc~ 1;
 #X obj 592 493 dac~ 1;
 #X obj 18 95 hsl 128 15 1 0 0 0 \$0-peaks_s \$0-peaks_r Squash_peaks
-20 -8 0 10 -262130 -1 -1 0 1;
+20 -8 0 10 -262130 -1 -1 4699 1;
 #X obj 18 131 hsl 128 15 500 2000 0 0 \$0-lowpass_s \$0-lowpass_r LowPass_in
-20 -8 0 10 -262144 -1 -1 3810 1;
+20 -8 0 10 -262144 -1 -1 3387 1;
 #X obj 206 95 hsl 128 15 10 350 0 0 \$0-sweep_s \$0-sweep_r LFO_Sweep_range
-20 -8 0 10 -228856 -1 -1 934 1;
+20 -8 0 10 -228856 -1 -1 2615 1;
 #X floatatom 344 93 5 0 0 0 - - -;
 #X floatatom 154 56 5 0 0 0 - - -;
 #X floatatom 154 93 5 0 0 0 - - -;
 #X floatatom 154 130 5 0 0 0 - - -;
 #X floatatom 344 276 5 0 0 0 - - -;
 #X obj 206 243 hsl 128 15 3 -10 0 0 \$0-mixAmt_s \$0-mixAmt_r Mix_Amount
-20 -8 0 10 -262130 -1 -1 8011 1;
+20 -8 0 10 -262130 -1 -1 6497 1;
 #X floatatom 344 241 5 0 0 0 - - -;
-#X obj 57 208 hradio 15 1 0 6 \$0-scale_s \$0-scale_r Scale 20 -8 0
-10 -262144 -1 -1 0;
-#X obj 514 169 vcf~ 400, f 11;
+#X obj 57 206 hradio 15 1 0 6 \$0-scale_s \$0-scale_r Scale 20 -8 0
+10 -262144 -1 -1 1;
+#X obj 514 205 vcf~ 400, f 11;
 #X obj 302 33 tgl 15 0 \$0-LFOonOff_s \$0-LFOonOff_r LFO_on/off 17
 7 0 10 -228856 -1 -1 1 1;
 #X obj 481 28 osc~ 0.3;
 #X obj 206 132 hsl 128 15 50 1500 0 0 \$0-freqCenter_s \$0-freqCenter_r
-Freq_Center 20 -8 0 10 -262130 -1 -1 8321 1;
+Freq_Center 20 -8 0 10 -262130 -1 -1 6600 1;
 #X floatatom 344 130 5 0 0 0 - - -;
 #X obj 206 58 hsl 128 15 0.01 5 0 0 \$0-LFOfreq_s \$0-LFOfreq_r LFO_freq
-20 -8 0 10 -228856 -1 -1 802 1;
+20 -8 0 10 -228856 -1 -1 865 1;
 #X floatatom 344 56 5 0 0 0 - - -;
 #X obj 206 169 hsl 128 15 0.1 12 0 0 \$0-freqQ_s \$0-freqQ_r Filter_Q
-20 -8 0 10 -262130 -1 -1 5603 1;
+20 -8 0 10 -262130 -1 -1 2700 1;
 #X floatatom 344 167 5 0 0 0 - - -;
 #X obj 206 206 hsl 128 15 1 0 0 0 \$0-fMix_s \$0-fMix_r BP....Filter_Mix....LP
-0 -8 0 10 -262130 -1 -1 7620 1;
+0 -8 0 10 -262130 -1 -1 1905 1;
 #X obj 644 183 - 1;
 #X obj 644 206 abs;
 #X floatatom 344 204 5 0 0 0 - - -;
-#N canvas 48 110 1226 615 preWindow 0;
+#N canvas 48 110 716 527 preWindow 0;
 #X obj 69 257 text define \$0-preText;
 #X obj 51 51 cnv 15 174 64 empty empty empty 20 12 0 14 -66577 -66577
 0;
 #X obj 53 53 cnv 15 170 60 empty empty empty 20 12 0 14 -191407 -66577
 0;
-#X obj 60 69 hradio 14 1 0 9 \$0-presRadio_s \$0-presRadio_r Presets
-2 -7 0 10 -262144 -1 -1 0;
+#X obj 60 70 hradio 14 1 0 9 \$0-presRadio_s \$0-presRadio_r Presets
+2 -8 0 10 -262144 -1 -1 2;
 #X symbolatom 60 91 21 0 0 0 - #0-presetName_r #0-presetName_s;
 #X obj 200 59 vradio 13 1 0 3 \$0-presBank_s empty empty 0 -8 0 10
 -262144 -1 -1 1;
@@ -113,9 +113,9 @@ Freq_Center 20 -8 0 10 -262130 -1 -1 8321 1;
 #X connect 19 15 34 0;
 #X connect 36 0 0 0;
 #X coords 0 -1 1 1 176 66 2 50 50;
-#X restore 14 278 pd preWindow;
+#X restore 14 275 pd preWindow;
 #X obj 18 169 hsl 128 15 800 6000 0 0 \$0-loOut_s \$0-loOut_r Lowpass_out
-20 -8 0 10 -262144 -1 -1 4396 1;
+20 -8 0 10 -262144 -1 -1 3663 1;
 #X obj 726 387 samplerate~;
 #X obj 726 364 loadbang;
 #X obj 594 431 16x_distort;
@@ -123,8 +123,8 @@ Freq_Center 20 -8 0 10 -262130 -1 -1 8321 1;
 filtering plugin for guitarists;
 #X obj 481 67 *~ 1;
 #X floatatom 154 168 5 0 0 0 - - -;
-#N canvas 119 133 701 392 savetx 0;
-#X obj 286 51 bng 15 250 50 0 empty empty Load_Preset_File 18 7 0 10
+#N canvas 76 227 701 392 savetx 0;
+#X obj 288 38 bng 15 250 50 0 empty empty Load_Preset_File 18 7 0 10
 -262144 -1 -1;
 #X obj 286 197 s \$0-preTextDefine;
 #X obj 286 147 openpanel;
@@ -133,7 +133,6 @@ filtering plugin for guitarists;
 #X obj 258 251 s \$0-bankReset;
 #X obj 258 227 delay 100;
 #X msg 286 109 symbol ~/.AUCOP/guitarToy16x/;
-#X text 300 31 Presets, f 8;
 #X connect 0 0 7 0;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;
@@ -141,24 +140,24 @@ filtering plugin for guitarists;
 #X connect 4 0 6 0;
 #X connect 6 0 5 0;
 #X connect 7 0 2 0;
-#X coords 0 -1 1 1 130 40 2 280 30;
-#X restore 204 305 pd savetx;
+#X coords 0 -1 1 1 134 30 2 280 30;
+#X restore 203 309 pd savetx;
 #X obj 18 26 hsl 128 15 1 50 0 0 \$0-preLevel_s \$0-preLevel_r Pre-Level
-20 -8 0 10 -228856 -1 -1 6739 1;
+20 -8 0 10 -228856 -1 -1 6480 1;
 #X floatatom 154 25 5 0 0 0 - - -;
 #X text 619 23 AUCOP GuitarToy \, Pd patch version;
-#X obj 596 83 *~;
-#X obj 611 230 *~;
-#X obj 610 260 *~;
-#X obj 514 210 *~;
+#X obj 596 99 *~;
+#X obj 611 263 *~;
+#X obj 610 293 *~;
+#X obj 514 236 *~;
 #X obj 501 98 *~;
 #X obj 502 125 +~;
 #X obj 593 469 *~;
-#X obj 594 287 +~;
-#X obj 18 246 hsl 128 15 0.1 4 0 0 \$0-resonance_s \$0-resonance_r
-Resonance 20 -8 0 10 -262130 -1 -1 1954 1;
-#X floatatom 154 246 5 0 0 0 - - -;
-#X obj 551 125 *~ 0.9;
+#X obj 594 320 +~;
+#X obj 18 244 hsl 128 15 0.1 4 0 0 \$0-resonance_s \$0-resonance_r
+Resonance 20 -8 0 10 -262130 -1 -1 3582 1;
+#X floatatom 154 244 5 0 0 0 - - -;
+#X obj 551 141 *~ 0.9;
 #X obj 740 258 + 1;
 #X obj 740 283 * 2;
 #X obj 726 158 r \$0-resonance_s;
