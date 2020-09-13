@@ -8,20 +8,26 @@ AUCOP-guitarToy16x is a 16x-oversampled guitar audio processor. It includes a cu
 
 ### Installation
 
-#### Linux
-
 Sorry, no install script yet...
+
+#### All
+
+- All: copy the .AUCOP directory to the home path "~/". This only holds preset files currently.
+
+#### Linux Plugins
 
 - LV2: copy the LV2 directory ("AUCOP-guitarToy16x.lv2") to the ~/.lv2 directory in your home dir. Or to the system LV2 directory.
 - VST3: copy the LV2 directory ("AUCOP-guitarToy16x.vst3") to the ~/.vst3 directory in home dir. Or to the system VST3 directory.
-- All: copy the .AUCOP directory to the home path "~/". This only holds preset files currently.
 
-#### All (Pure Data)
+#### Pure Data
 
 - Copy the contents of the "pd" directory wherever is convenient.
 
-## Plugin use (copy of Info.txt)
+#### Camomile
 
+- Copy the contents of the "camomile" directory to the "Examples" folder in your Camomile install.
+
+## Plugin use (copy of Info.txt)
 
 AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled distortion and a simple (and weird!) pre-filter.
 
