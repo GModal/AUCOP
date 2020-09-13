@@ -1,0 +1,1 @@
+Pre-Level, Gain, Squash Peaks, Level, Scale Pre/Post, Lowpass In, LFO Frequency, LFO Sweep Range, Frequency Center, Filter Q, Mix Amount, LFO On/Off, Filter Mix, Lowpass Out, Presence, Name

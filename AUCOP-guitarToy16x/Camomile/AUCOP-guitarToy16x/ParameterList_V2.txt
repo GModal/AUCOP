@@ -1,0 +1,19 @@
+Pre-Level
+Gain
+Level
+Resonance
+Squash Peaks
+Scale
+LFO On/Off
+LFO Frequency
+LFO Sweep Range
+Frequency Center
+Filter Q
+Filter Mix
+Mix Amount
+Lowpass In
+Lowpass Out
+Name
+
+
+Pre-Level,Gain,Level,Resonance,Squash Peaks,Scale,LFO On/Off,LFO Freq,LFO Sweep,Freq Center,Filter Q,Filter Mix,Mix Amount,Lowpass In,Lowpass Out,Name

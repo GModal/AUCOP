@@ -1,31 +1,46 @@
 ## AUCOP-guitarToy16x
 
+Current Version: 0.1.71
+
 AUCOP-guitarToy16x is a 16x-oversampled guitar audio processor. It includes a custom distortion module, an unusual filter module and a set of presets.
 
 See the AUCOP parent README for installation instructions.
 
-![gtoy pic](../webstuff/guitarToy.png)
+![gtoy pic](../webstuff/guitarToy_0.1.71.png)
 
 ## Plugin use (copy of Info.txt)
----
-AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled distortion and simple but powerful pre-filter.
 
-### USE:
---Click on the Preset buttons to reset the parameters. These are loaded from a text file at start-up.
 
-#### Parameters:
+AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled distortion and a simple (and weird!) pre-filter.
 
+### Use
+
+gT16x is a mono guitar effect. So one-in, one-out audio channels.
+
+Click on the Preset buttons to reset the parameters (Unclick "Use Buffer" to access presets). These are loaded from a text file at start-up. 
+
+Otherwise, it's a plugin; change the values, play your guitar.
+
+## Parameters
+
+### General Section
+
+- Pre-Level: Input level, before any processing.
 - Gain: Distortion gain.
 - Squash Peaks: Asymmetrically down-scale the peaks after the first level of distortion is appled. This does lower amplitude, so compensate with Level.
 - Low Pass In: Low-pass filter applied after up-sampling.
 - Low Pass Out: Low-pass filter applied before down-sampling.
 - Scale: Perform a destructive Pre and Post scaling of the signal, before the distortion and after.
+- Resonance: Set the resonance of the low-pass filter, immediately after up-sampling.
 
-#### Preset section
+### Preset section
+
+- Use Buffer: Click for preset values "on load". These will either be the Camomile defaults, or the values saved and restored by the host (I.E., preset values saved in a DAW or FX chain in a plugin host).
 - Preset: Click for preset in current Bank.
 - Bank: Click to select Bank.
 
-#### Filter section
+### Filter section
+
 - LFO Freq: The filter has an optional LFO to alter the center frequency. On/Off enables/disables the LFO.
 - LFO Sweep Range: The center frequency is shifted by this amount by the LFO.
 - Freq Center: Filter center frequency.
@@ -34,7 +49,18 @@ AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled dist
 - Mix Amount: Mix the filtered signal with the incoming signal.
 - Level: Overall volume output level.
 
+### Patch specific
 
+- Load Patch File: Loads a bank of patches.
+
+**AUCOP**: An Unfortunate Collection Of Plugins
+
+Plugin build from a *PureData* vanilla patch, with *Camomile*.
+
+Version: 0.1.71a
+Author: Doug Garmon
+
+--
 #### Notes:
 A post-distortion filter is appled before the signal is upsampled. It's currently set to a low frequency, to suppress higher harmonic alias issues.
 
@@ -42,9 +68,20 @@ This corresponds (very) loosely to the frequency response of guitar speakers.
 
 #### AUCOP: An Unfortunate Collection Of Plugins
 
-Plugin build from a PureData vanilla patch, with Camomile.
+Plugin build from a PureData vanilla patch, with Camomile 1.0.7.
 
 ---
+
+### Changes in 0.1.71
+
+
+- New parameters have been added.
+- The preset file format has changed.
+- The post-upsampling low-pass filter schema has changed -- it's now a biquad~ filter object, replacing the two-stage filter used previously.
+- The presets have been rewritten due to the low-pass filter change.
+- Preset files can be load (usually stored in ~/.AUCOP/).
+- The plugin versions include a buffer filled at load time by the plugin host. Previous versions reset when the preset file was loaded. This was an important oversight in the first release.
+
 
 ### Thoughts About AUCOP-guitarToy16x
 
@@ -60,19 +97,21 @@ The presets are loaded from a text file inside the plugin (or Pd) folder. It's n
 
 #### Parameters Order, txt file:
 
-- Gain ... 0.1-35
-- Squash Peaks ... 0-1
-- Level ... 0-1
-- Scale, Pre/Post ... 0-5
-- Lowpass In ... 200-4400
-- LFO Frequency ... 0-5
-- LFO Sweep Range ... 0-350
-- Frequency Center ... 50-1500
-- Filter Q ... 0.1-12
-- Mix Amount ... -10-3
-- LFO On/Off ... 0-1 (integer)
-- Filter Mix ... 0-1
-- Lowpass Out ... 800-3800
-- Patch Name ... text, no spaces
+- 1) Pre-Level: 1.0 - 50.0
+- 2) Gain: 0.1 - 85.0
+- 3) Level: 0.0 - 1.1
+- 4) Resonance: 0.1 - 4.0 
+- 5) Squash Peaks: 0.0 - 1.0
+- 6) Scale: 0 - 5
+- 7) LFO On/Off: 0 - 1
+- 8) LFO Frequency: 0.0 - 5.0
+- 9) LFO Sweep Range: 0.0 - 350.0
+- 10) Frequency Center: 50.0 - 1500.0
+- 11) Filter Q: 0.1 - 12.0
+- 12) Filter Mix: 0.0 - 1.0
+- 13) Mix Amount: 2.0 - -10.0
+- 14) Lowpass In: 200.0 - 4400.0
+- 15) Lowpass Out: 800.0 - 3800.0
+- 16) Name: symbol string, no spaces
 
 Patch parameters are separated by spaces, and each patch terminated with a semicolon. These specs are fairly typically when parsing text files within Pure Data.
