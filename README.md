@@ -16,7 +16,7 @@ All plugin subfolders are organized as follows:
 
 Note: As of 1.0.7, Camomile doesn't support VST2, due to Steinberg withdrawing the header files (their API was free, but never open). This is unfortunate, as fewer hosts support vst3. 
 
-Additionally, due to JUCE cross-platform issues, a LOT of extra MIDI parameters are exposed in the VST3 plugin.
+Additionally, due to JUCE cross-platform issues, MANY extra MIDI parameters are exposed in the VST3 plugin generic interface.
 
 - /.AUCOP/ ... This directory should be copied to the user home dir (i.e.: ~/.AUCOP/). It holds preset and configuration files. It's new with 0.1.71.
   
