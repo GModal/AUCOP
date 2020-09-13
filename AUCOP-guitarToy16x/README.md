@@ -97,21 +97,21 @@ The presets are loaded from a text file inside the plugin (or Pd) folder. It's n
 
 #### Parameters Order, txt file:
 
-- 1) Pre-Level: 1.0 - 50.0
-- 2) Gain: 0.1 - 85.0
-- 3) Level: 0.0 - 1.1
-- 4) Resonance: 0.1 - 4.0 
-- 5) Squash Peaks: 0.0 - 1.0
-- 6) Scale: 0 - 5
-- 7) LFO On/Off: 0 - 1
-- 8) LFO Frequency: 0.0 - 5.0
-- 9) LFO Sweep Range: 0.0 - 350.0
-- 10) Frequency Center: 50.0 - 1500.0
-- 11) Filter Q: 0.1 - 12.0
-- 12) Filter Mix: 0.0 - 1.0
-- 13) Mix Amount: 2.0 - -10.0
-- 14) Lowpass In: 200.0 - 4400.0
-- 15) Lowpass Out: 800.0 - 3800.0
-- 16) Name: symbol string, no spaces
+1) Pre-Level: 1.0 - 50.0
+2) Gain: 0.1 - 85.0
+3) Level: 0.0 - 1.1
+4) Resonance: 0.1 - 4.0 
+5) Squash Peaks: 0.0 - 1.0
+6) Scale: 0 - 5
+7) LFO On/Off: 0 - 1
+8) LFO Frequency: 0.0 - 5.0
+9) LFO Sweep Range: 0.0 - 350.0
+10) Frequency Center: 50.0 - 1500.0
+11) Filter Q: 0.1 - 12.0
+12) Filter Mix: 0.0 - 1.0
+13) Mix Amount: 2.0 - -10.0
+14) Lowpass In: 200.0 - 4400.0
+15) Lowpass Out: 800.0 - 3800.0
+16) Name: symbol string, no spaces
 
 Patch parameters are separated by spaces, and each patch terminated with a semicolon. These specs are fairly typically when parsing text files within Pure Data.
