@@ -93,7 +93,7 @@ A simple, custom distortion function uses the expr~ object, but mostly as a cond
 
 The filtering is done before upsampling to conserve cpu cycles. It's also an unusual filter setup; it's somewhat counter-intuitive, but sounds pretty nice. It also includes an LFO sweep function. I included this to add some subtle "motion" to the sound, but it can give more overt effects (LFO wha, or phase shifting "like" sounds).
 
-The presets are loaded from a text file inside the plugin (or Pd) folder. It's named "gtPresets.txt" and can be edited with any text editor. Here's the parameter order & values for a preset patch:
+The presets are loaded from a text file inside the plugin (or Pd) folder. It's named "gtPresets_V2.txt" (previous versions "gtPresets.txt") and can be edited with any text editor. Here's the V2 parameter order & values for a preset patch:
 
 #### Parameters Order, txt file:
 
