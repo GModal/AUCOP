@@ -11,4 +11,4 @@ Additionally, the more reverb plugins available in Linux/LV2, the better!
 
 The abstraction reverb3~.pd is included with all modern Pd distributions. This is basically unmodified for the plugin.
 
-Why include a Pure Data version, when you can easily instantiate reverb3~ in your own code? Just to be consistent, I suppose.
+Why include a Pure Data version, when you can easily instantiate reverb3~ in your own patch? Just to be consistent, I suppose.
