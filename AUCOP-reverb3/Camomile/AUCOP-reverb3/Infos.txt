@@ -1,0 +1,15 @@
+AUCOP-reverb3 is a reverb patch based on the Pd rev3~ object. 
+
+Parameters:
+---------------------------------
+Depth: Amount of Feedback
+Xover Freq: Crossover Freq in Hz
+Damping: High Freq damping
+Dry: Dry signal
+Wet: Wet signal
+
+AUCOP: An Unfortunate Collection Of Plugins
+Plugin build from a PureData vanilla patch, with Camomile.
+
+Version: 1.0
+Author: Doug Garmon

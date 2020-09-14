@@ -7,6 +7,10 @@ It's a collection of open source audio plugins, which are (at inception) based o
 
 Some plugins also utilize MobMuPlat, which is an opensource API for creating interfaces on mobile devices. MobMuPlat has great networking hooks, and is OSC capable.
 
+### Plugins
+
+[AUCOP-guitarToy16x](./AUCOP-guitarToy16x/README.md)
+
 ### Installation
 All plugin subfolders are organized as follows:
 

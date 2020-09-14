@@ -1,0 +1,95 @@
+#N canvas 383 119 789 563 12;
+#X obj 447 97 adc~;
+#X obj 509 280 dac~;
+#X obj 23 88 hsl 128 15 100 12000 0 0 \$0-cross_s \$0-cross_r empty
+-2 -8 0 10 -228856 -1 -1 3308 1;
+#X obj 23 120 hsl 128 15 0 100 0 0 \$0-damp_s \$0-damp_r empty -2 -8
+0 10 -228856 -1 -1 3175 1;
+#X obj 23 54 hsl 128 15 0 100 0 0 \$0-depth_s \$0-depth_r empty -2
+-8 0 10 -228856 -1 -1 10795 1;
+#X obj 24 185 hsl 128 15 0 110 0 0 \$0-wet_s \$0-wet_r empty -2 -8
+0 10 -262130 -159808 -1 10391 1;
+#X obj 447 153 rev3~ 90 90 3000 25, f 24;
+#X text 33 101 Damping, f 8;
+#X obj 24 152 hsl 128 15 0 110 0 0 \$0-dry_s \$0-dry_r empty -2 -8
+0 10 -262130 -159808 -1 8082 1;
+#X text 35 133 Dry, f 6;
+#X text 35 166 Wet, f 5;
+#X obj 328 172 *~;
+#X obj 363 172 *~;
+#X obj 160 152 nbx 3 14 0 130 0 0 \$0-dryNo_s \$0-dryNo_r empty 0 -8
+0 10 -262144 -1 -1 70 256;
+#X obj 160 185 nbx 3 14 0 130 0 0 \$0-wetNo_s \$0-wetNo_r empty 0 -8
+0 10 -262144 -1 -1 90 256;
+#X text 200 149 %;
+#X text 200 183 %;
+#X obj 159 88 nbx 5 14 100 12000 0 0 \$0-crossNo_s \$0-crossNo_r empty
+0 -8 0 10 -262144 -1 -1 3200 256;
+#X obj 159 54 nbx 3 14 0 100 0 0 \$0-depthNo_s \$0-depthNo_r empty
+0 -8 0 10 -262144 -1 -1 85 256;
+#X text 199 51 %;
+#X obj 160 120 nbx 3 14 0 100 0 0 \$0-dampNo_s \$0-dampNo_r empty 0
+-8 0 10 -262144 -1 -1 25 256;
+#X text 215 86 Hz;
+#X obj 123 207 hradio 15 1 0 2 \$0-pSchema_s \$0-pSchema_r empty 0
+-8 0 10 -262144 -1 -1 0;
+#X obj 478 192 1to2~;
+#X obj 535 192 1to2~;
+#X text 167 28 Reverb3, f 8;
+#X text 80 9 AUCOPlugins, f 13;
+#X obj 346 78 * 0.01;
+#X text 33 69 Xover Freq, f 12;
+#X text 33 35 Depth (FeedBk), f 15;
+#X text 27 204 Port Schema, f 12;
+#X obj 346 26 r \$0-dry_s;
+#X obj 513 24 r \$0-wet_s;
+#X obj 546 58 r \$0-depth_s;
+#X obj 579 90 r \$0-cross_r;
+#X obj 612 122 r \$0-damp_s;
+#X obj 632 157 r \$0-pSchema_s;
+#X obj 66 269 loadbang;
+#X obj 66 442 s \$0-depth_r \$1;
+#X obj 66 333 unpack f f f f f f;
+#X obj 90 471 s \$0-cross_r \$1;
+#X obj 115 501 s \$0-damp_r \$1;
+#X obj 139 364 s \$0-dry_r \$1;
+#X obj 165 392 s \$0-wet_r \$1;
+#X obj 189 428 s \$0-pSchema_r \$1;
+#X msg 66 302 85 3200 25 75 90 0;
+#X connect 0 0 6 0;
+#X connect 0 0 11 0;
+#X connect 0 1 6 1;
+#X connect 0 1 12 0;
+#X connect 2 0 17 0;
+#X connect 3 0 20 0;
+#X connect 4 0 18 0;
+#X connect 5 0 14 0;
+#X connect 6 0 1 0;
+#X connect 6 1 23 0;
+#X connect 6 2 24 0;
+#X connect 6 3 1 1;
+#X connect 8 0 13 0;
+#X connect 11 0 1 0;
+#X connect 12 0 1 1;
+#X connect 23 0 1 1;
+#X connect 23 1 1 0;
+#X connect 24 0 1 1;
+#X connect 24 1 1 0;
+#X connect 27 0 11 1;
+#X connect 27 0 12 1;
+#X connect 31 0 27 0;
+#X connect 32 0 6 2;
+#X connect 33 0 6 3;
+#X connect 34 0 6 4;
+#X connect 35 0 6 5;
+#X connect 36 0 24 1;
+#X connect 36 0 23 1;
+#X connect 37 0 45 0;
+#X connect 39 0 38 0;
+#X connect 39 1 40 0;
+#X connect 39 2 41 0;
+#X connect 39 3 42 0;
+#X connect 39 4 43 0;
+#X connect 39 5 44 0;
+#X connect 45 0 39 0;
+#X coords 0 -1 1 1 228 218 2 10 10;

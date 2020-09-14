@@ -1,0 +1,86 @@
+#N canvas 499 196 842 474 12;
+#X obj 447 97 adc~;
+#X obj 509 280 dac~;
+#X obj 23 88 hsl 128 15 100 12000 0 0 \$0-cross_s \$0-cross_r empty
+-2 -8 0 10 -228856 -1 -1 0 1;
+#X obj 23 120 hsl 128 15 0 100 0 0 \$0-damp_s \$0-damp_r empty -2 -8
+0 10 -228856 -1 -1 0 1;
+#X obj 23 54 hsl 128 15 0 100 0 0 \$0-depth_s \$0-depth_r empty -2
+-8 0 10 -228856 -1 -1 0 1;
+#X obj 24 185 hsl 128 15 0 110 0 0 \$0-wet_s \$0-wet_r empty -2 -8
+0 10 -262130 -159808 -1 0 1;
+#X obj 447 153 rev3~ 90 90 3000 25, f 24;
+#X text 33 101 Damping, f 8;
+#X obj 24 152 hsl 128 15 0 110 0 0 \$0-dry_s \$0-dry_r empty -2 -8
+0 10 -262130 -159808 -1 0 1;
+#X text 35 133 Dry, f 6;
+#X text 35 166 Wet, f 5;
+#X obj 328 172 *~;
+#X obj 363 172 *~;
+#X obj 704 221 param.change;
+#X obj 160 152 nbx 3 14 0 130 0 0 empty \$0-dryNo_r empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 160 185 nbx 3 14 0 130 0 0 empty \$0-wetNo_r empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X text 200 149 %;
+#X text 200 183 %;
+#X text 21 268 Send GUI input upstream;
+#X obj 159 88 nbx 5 14 100 12000 0 0 empty \$0-crossNo_r empty 0 -8
+0 10 -262144 -1 -1 100 256;
+#X obj 159 54 nbx 3 14 0 100 0 0 empty \$0-depthNo_r empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X text 199 51 %;
+#X obj 160 120 nbx 3 14 0 100 0 0 empty \$0-dampNo_r empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X text 215 86 Hz;
+#X obj 123 207 hradio 15 1 0 2 \$0-pSchema_s \$0-pSchema_r empty 0
+-8 0 10 -262144 -1 -1 0;
+#X obj 478 192 1to2~;
+#X obj 535 192 1to2~;
+#X text 167 28 Reverb3, f 8;
+#X text 80 9 AUCOPlugins, f 13;
+#X obj 26 289 param.set 1 \$0-depth_s;
+#X obj 26 315 param.set 2 \$0-cross_s;
+#X obj 27 340 param.set 3 \$0-damp_s;
+#X obj 27 366 param.set 4 \$0-dry_s;
+#X obj 27 392 param.set 5 \$0-wet_s;
+#X obj 27 418 param.set 6 \$0-pSchema_s;
+#X obj 513 24 param.get 5 \$0-wet_r;
+#X obj 546 58 param.get 1 \$0-depth_r;
+#X obj 579 90 param.get 2 \$0-cross_r;
+#X obj 612 122 param.get 3 \$0-damp_r;
+#X obj 632 157 param.get 6 \$0-pSchema_r;
+#X obj 346 78 * 0.01;
+#X text 33 69 Xover Freq, f 12;
+#X text 33 35 Depth (FeedBk), f 15;
+#X text 27 204 Port Schema, f 12;
+#X obj 346 26 param.get 4 \$0-dry_r;
+#X connect 0 0 6 0;
+#X connect 0 0 11 0;
+#X connect 0 1 6 1;
+#X connect 0 1 12 0;
+#X connect 2 0 19 0;
+#X connect 3 0 22 0;
+#X connect 4 0 20 0;
+#X connect 5 0 15 0;
+#X connect 6 0 1 0;
+#X connect 6 1 25 0;
+#X connect 6 2 26 0;
+#X connect 6 3 1 1;
+#X connect 8 0 14 0;
+#X connect 11 0 1 0;
+#X connect 12 0 1 1;
+#X connect 25 0 1 1;
+#X connect 25 1 1 0;
+#X connect 26 0 1 1;
+#X connect 26 1 1 0;
+#X connect 35 0 6 2;
+#X connect 36 0 6 3;
+#X connect 37 0 6 4;
+#X connect 38 0 6 5;
+#X connect 39 0 26 1;
+#X connect 39 0 25 1;
+#X connect 40 0 11 1;
+#X connect 40 0 12 1;
+#X connect 44 0 40 0;
+#X coords 0 -1 1 1 228 218 2 10 10;
