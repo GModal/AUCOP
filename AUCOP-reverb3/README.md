@@ -1,5 +1,9 @@
 ## AUCOP-reverb3
 
+A Camomile plugin containing the Pure Data reverb3~ obj.
+
+![reverb3 pic](../webstuff/AUCOP-reverb.png)
+
 This plugin is included as a simple demo of Camomile.
 
 In this case, to illustrate these two points:
