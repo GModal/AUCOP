@@ -2,7 +2,7 @@
 
 A Camomile plugin containing the Pure Data reverb3~ obj.
 
-![reverb3 pic](../webstuff/AUCOP-reverb.png)
+![reverb3 pic](../webstuff/AUCOP-reverb3.png)
 
 This plugin is included as a simple demo of Camomile.
 
