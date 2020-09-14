@@ -4,9 +4,7 @@ A Camomile plugin containing the Pure Data reverb3~ obj.
 
 ![reverb3 pic](../webstuff/AUCOP-reverb3.png)
 
-This plugin is included as a simple demo of Camomile.
-
-In this case, to illustrate these two points:
+This plugin is included as a simple demo of Camomile, to illustrate these two points:
 
 - How to make a interface with Graph-On-Parent in Camomile
 - Use of an existing Pd abstraction within Camomile
