@@ -11,6 +11,8 @@ Some plugins also utilize MobMuPlat, which is an opensource API for creating int
 
 [AUCOP-guitarToy16x](./AUCOP-guitarToy16x/README.md)
 
+[AUCOP-reverb3](./AUCOP-reverb3/README.md)
+
 ### Installation
 All plugin subfolders are organized as follows:
 
