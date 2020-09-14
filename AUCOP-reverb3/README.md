@@ -4,7 +4,7 @@ This plugin is included as a simple demo of Camomile.
 
 In this case, to illustrate these two points:
 
-- How to make a Camomile interface with Graph-On-Parent Using a Pd abstraction with Camomile
+- How to make a interface with Graph-On-Parent in Camomile
 - Use of an existing Pd abstraction within Camomile
 
 Additionally, the more reverb plugins available in Linux/LV2, the better!
