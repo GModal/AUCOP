@@ -11,7 +11,7 @@ This plugin is included as a simple demo of Camomile, to illustrate these two po
 
 Additionally, the more reverb plugins available in Linux/LV2, the better!
 
-### Info.txt :
+### Plugin Use (Info.txt) :
 
 AUCOP-reverb3 is a reverb patch based on the Pd rev3~ object. 
 
