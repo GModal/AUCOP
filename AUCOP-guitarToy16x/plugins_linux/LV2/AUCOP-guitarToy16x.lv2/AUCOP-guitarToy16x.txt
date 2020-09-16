@@ -1,6 +1,6 @@
 code AE20;
 type effect;
-bus 1 1;
+iolayout 1 1;
 description Infos.txt;
 compatibility 1.0.7;
 manufacturer Doug Garmon;
@@ -20,5 +20,5 @@ param -name Filter Mix -min 0 -max 1 -default 0.75;
 param -name Mix Amount -min -10 -max 2 -default -1.75;
 param -name Low Pass In -min 200 -max 4400 -default 950;
 param -name Low Pass Out -min 800 -max 3800 -default 2400;
-param -name Patch -meta true -min 0 true -max 8 -default 0 -nsteps 9;
-param -name Bank -meta true -min 0 true -max 2 -default 0 -nsteps 3;
+param -name Patch -min 0 true -max 8 -default 0 -nsteps 9 -meta true;
+param -name Bank -min 0 true -max 2 -default 0 -nsteps 3 -meta true;
