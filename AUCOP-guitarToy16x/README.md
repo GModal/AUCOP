@@ -33,9 +33,9 @@ AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled dist
 
 ### Use
 
-gT16x is a mono guitar effect. So one-in, one-out audio channels.
+AUCOP-guitarToy16x is a mono guitar effect. So one-in, one-out audio channels.
 
-Click on the Preset buttons to reset the parameters (Unclick "Use Buffer" to access presets). These are loaded from a text file at start-up. 
+Click on the Preset buttons to reset the parameters (Unclick "Use Buffer" to access presets). These are loaded from a text file at start-up. Load different patches with the "Load Patch File" button.
 
 Otherwise, it's a plugin; change the values, play your guitar.
 
