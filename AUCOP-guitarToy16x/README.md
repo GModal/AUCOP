@@ -93,9 +93,10 @@ Plugin build from a PureData vanilla patch, with Camomile 1.0.7.
 ### Changes in 0.1.71
 
 
-- New parameters have been added.
+- New parameters have been added, and the parameters re-ordered.
+- A custom parameter "get" subpatch replaces using param.get for each parameter. This reduces cpu overhead 10-15%.
 - The preset file format has changed.
-- The post-upsampling low-pass filter schema has changed -- it's now a biquad~ filter object, replacing the two-stage filter used previously.
+- The post-upsampling low-pass filter schema has changed -- it's now a biquad~ filter object, replacing the two-stage filter used previously. IMHO, this is quieter, and slightly reduces processor overhead.
 - The presets have been rewritten due to the low-pass filter change.
 - Preset files can be load (usually stored in ~/.AUCOP/).
 - The plugin versions include a buffer filled at load time by the plugin host. Previous versions reset when the preset file was loaded. This was an important oversight in the first release.
@@ -109,7 +110,7 @@ It's evolved into something not-quite-so-low-impact, but that's due to moving fr
 
 A simple, custom distortion function uses the expr~ object, but mostly as a conditional statement and not for number crunching.
 
-The filtering is done before upsampling to conserve cpu cycles. It's also an unusual filter setup; it's somewhat counter-intuitive, but sounds pretty nice. It also includes an LFO sweep function. I included this to add some subtle "motion" to the sound, but it can give more overt effects (LFO wha, or phase shifting "like" sounds).
+The filtering is done before upsampling to conserve cpu cycles. It's also an unusual filter setup; it's somewhat counter-intuitive, but sounds pretty nice. It also includes an LFO sweep function. I included this to add some subtle "motion" to the sound, but it can give more overt effects (LFO wha, or phase shifting "like" sounds). For some patches the LFO does introduce a little noise.
 
 The presets are loaded from a text file inside the plugin (or Pd) folder. It's named "gtPresets_V2.txt" (previous versions "gtPresets.txt") and can be edited with any text editor. Here's the V2 parameter order & values for a preset patch:
 
