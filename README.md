@@ -13,8 +13,8 @@ Some plugins also utilize MobMuPlat, which is an opensource API for creating int
 
 ### Plugins
 
-- [AUCOP-guitarToy16x](./AUCOP-guitarToy16x/README.md)
-- [AUCOP-reverb3](./AUCOP-reverb3/README.md)
+- [AUCOP-guitarToy16x](./AUCOP-guitarToy16x/)
+- [AUCOP-reverb3](./AUCOP-reverb3/)
 - [AUCOP-pingolo](./AUCOP-pingolo/)
 
 ### Installation
