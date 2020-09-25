@@ -24,9 +24,9 @@ All plugin subfolders are organized as follows:
 - /Camomile/ ... the Camomile plugin source files. Place /<plugin_name>/ in the Camomile/Examples folder (or Camomile/Plugins/Examples/), and invoke Camomile as required for the target OS. Follow the instructions on the Camomile site for each OS to install from the /builds/ folder (it's different for each OS).
 - /plugins_linux/ ... binary plugins built for EXT4 64 bit systems (Debian Buster). If you don't want to generate the plugins, simply copy /<plugin_name>.lv2/ to ~/.lv2/, or the LV2 system folder. Likewise, copy the plugin within the /vst3/ folder to ~/.vst3/ to install the vst3 version.
 
-Note: As of 1.0.7, Camomile doesn't support VST2, due to Steinberg withdrawing the header files (their API was free, but never open). This is unfortunate, as fewer hosts support vst3. 
+`Note: As of 1.0.7, Camomile doesn't support VST2, due to Steinberg withdrawing the header files (their API was free, but never open). This is unfortunate, as fewer hosts support vst3.`
 
-Additionally, due to JUCE cross-platform issues, MANY extra MIDI parameters are exposed in the VST3 plugin generic interface.
+`Additionally, due to JUCE cross-platform issues, MANY extra MIDI parameters are exposed in the VST3 plugin generic interface.`
 
 - /.AUCOP/ ... This directory should be copied to the user home dir (i.e.: ~/.AUCOP/). It holds preset and configuration files. It's new with 0.1.71.
   
