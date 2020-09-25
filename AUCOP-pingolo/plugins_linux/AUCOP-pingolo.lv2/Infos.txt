@@ -1,0 +1,15 @@
+AUCOP-pingolo is an LFO-driven stereo ping-pong pan/tremolo effect. 
+
+Parameters-----------
+
+Frequency: LFO frequency
+Peak Profile: Change the tremolo shape by clipping the LFO waveform (increase gain while clipping ceiling)
+Gain: Overall volume
+Floor: Set the signal floor which lessens depth of effect (volume cannot drop below this level)
+
+
+AUCOP: An Unfortunate Collection Of Plugins
+Plugin build from a PureData vanilla patch, with Camomile.
+
+Version: 0.1.71
+Author: Doug Garmon
