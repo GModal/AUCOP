@@ -22,7 +22,7 @@ All plugin subfolders are organized as follows:
 
 - /PD/ ... the orginal Pure Data patch and support files. Copy this folder anywhere, then load the <plugin_name>.pd file in Pure Data.
 - /Camomile/ ... the Camomile plugin source files. Place /<plugin_name>/ in the Camomile/Examples folder (or Camomile/Plugins/Examples/), and invoke Camomile as required for the target OS. Follow the instructions on the Camomile site for each OS to install from the /builds/ folder (it's different for each OS).
-- /plugins_linux/ ... binary plugins built for EXT4 64 bit systems (Debian Buster). If you don't want to generate the plugins, simply copy /<plugin_name>.lv2/ to ~/.lv2/, or the LV2 system folder. Likewise, copy the plugin within the /vst3/ folder to ~/.vst3/ to install the vst3 version.
+- /plugins_linux/ ... binary plugins built for EXT4 64 bit systems. If you don't want to generate the plugins, simply copy /<plugin_name>.lv2/ to ~/.lv2/, or the LV2 system folder. Likewise, copy the plugin within the /vst3/ folder to ~/.vst3/ to install the vst3 version.
 
 `Note: As of 1.0.7, Camomile doesn't support VST2, due to Steinberg withdrawing the header files (their API was free, but never open). This is unfortunate, as fewer hosts support vst3.`
 
