@@ -1,6 +1,6 @@
 ## AUCOP-guitarToy16x
 
-Current Version: 0.1.71
+Current Version: 0.1.72
 
 AUCOP-guitarToy16x is a 16x-oversampled guitar audio processor. It includes a custom distortion module, an unusual filter module and a set of presets.
 
@@ -75,7 +75,7 @@ Otherwise, it's a plugin; change the values, play your guitar.
 
 Plugin build from a *PureData* vanilla patch, with *Camomile*.
 
-Version: 0.1.71a
+Version: 0.1.72
 Author: Doug Garmon
 
 --
@@ -89,6 +89,11 @@ This corresponds (very) loosely to the frequency response of guitar speakers.
 Plugin build from a PureData vanilla patch, with Camomile 1.0.7.
 
 ---
+
+### Changes in 0.1.72
+
+- Previous versions didn't correctly fetch/set the samplerate. The Pd version works fine, but Camomile needs additional code. AUCOP-guitarToy16x now works fine with higher sample rates (tested on 96000 and 192000 sps).
+- After uploading with Camomile 1.0.7, I realized that version doesn't fix the xruns exhibited with openpanel obj in Debian Buster. So the guitarToy16x plugins are generated with the special "experimental" version of Camomile Pierre Guillot provided.
 
 ### Changes in 0.1.71
 
