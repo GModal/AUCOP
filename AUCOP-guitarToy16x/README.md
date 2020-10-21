@@ -27,6 +27,8 @@ Sorry, no install script yet...
 
 - Copy the contents of the "camomile" directory to the "Examples" folder in your Camomile install.
 
+Note: None of these three options is dependent on the others -- the plugins only can be installed, or the Camomile code only (to build the plugins), or the Pd patch, to run on a Pure Data install.
+
 ## Plugin use (copy of Info.txt)
 
 AUCOP-guitarToy16x is a guitar-oriented effect plugin, with 16x oversampled distortion and a simple (and weird!) pre-filter.
