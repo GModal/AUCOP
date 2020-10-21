@@ -20,7 +20,7 @@
 #X obj 100 15 inlet;
 #X obj 407 396 *~ 0.125;
 #X obj 590 12 inlet;
-#X obj 37 438 block~ 1024 1 16;
+#X obj 35 482 block~ 1024 1 16;
 #X obj 500 198 / 16;
 #X obj 19 13 inlet~ pad;
 #X obj 276 16 loadbang;

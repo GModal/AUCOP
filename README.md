@@ -3,7 +3,7 @@
 AUCOP is...
 ### *An Unfortunate Collection Of Plugins*
 
-#### V 0.1.72
+#### V 0.1.73
 
 It's a collection of open source audio plugins, which are (at inception) based on Pure Data and the Camomile plugin API (which itself uses libpd). Most plugins are based on "Vanilla" Pd, which is a prerequisite of Camomile. 
 

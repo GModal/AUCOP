@@ -1,18 +1,18 @@
 #N canvas 168 221 492 353 10;
 #X obj 57 13 inlet~;
-#X obj 57 243 outlet~;
-#X obj 197 76 sqrt~;
-#X obj 198 53 abs~;
-#X obj 56 203 expr~ if( $v1 > 1 \, $v2 \, if ($v1 < -1 \, $v3 \, $v1))
+#X obj 56 265 outlet~;
+#X obj 197 66 sqrt~;
+#X obj 198 43 abs~;
+#X obj 56 193 expr~ if( $v1 > 1 \, $v2 \, if ($v1 < -1 \, $v3 \, $v1))
 ;
-#X obj 398 63 inlet;
-#X obj 343 105 -~ 1;
-#X obj 342 129 *~ 1;
-#X obj 342 153 +~ 1;
-#X obj 341 177 *~ -1;
-#X obj 197 134 *~ 1;
-#X obj 198 110 -~ 1.25;
-#X obj 197 158 +~ 1.25;
+#X obj 398 57 inlet;
+#X obj 343 95 -~ 1;
+#X obj 342 119 *~ 1;
+#X obj 342 143 +~ 1;
+#X obj 341 167 *~ -1;
+#X obj 197 124 *~ 1;
+#X obj 198 100 -~ 1.25;
+#X obj 197 148 +~ 1.25;
 #X connect 0 0 3 0;
 #X connect 0 0 4 0;
 #X connect 2 0 6 0;
